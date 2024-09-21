@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>BunnyBot settings</title>
+</head>
+
+<body>
+
+
+	<!-- Haut de page -->
+	<header>
+		
+		<!-- Balise <img> pour afficher l'image de profil du bot -->
+		<img id="bot-avatar" src="" alt="Discord Bot Profile Picture">
+
+		<!-- Code JavaScript pour récupérer l'image de profil du bot -->
+		<script src="pdp.js"></script>
+
+		<h1 class="bot-name">
+			❝ 𝑩𝒖𝒏𝒏𝒚bot… ❞
+		</h1>
+
+		<nav class="right-top-menu">
+			<ul>
+				<li class="top-btn">
+					<button id="discord-login-btn">Connection</button>
+				</li>
+
+			</ul>
+		</nav>
+
+	</header>
+
+
+	<!-- Contenue sous forme de boîte -->
+	<div id="content">
+		<div class="leftbox">
+			<h1>
+				Je sais pas
+			</h1>
+			<p>
+				<iframe src="https://discord.com/widget?id=950010844568252447&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+			</p>
+		</div>
+
+		<div class="rightbox">
+			<p>
+				fffffffff
+			</p>
+		</div>
+	</div>
+
+
+	<!-- Pied de page -->
+	<footer>
+		Page administrateur du BunnyBot.
+	</footer>
+
+	<script>
+		document.getElementById("discord-login-btn").addEventListener("click", function() {
+
+			// Remplacez YOUR_CLIENT_ID, YOUR_REDIRECT_URI et YOUR_STATE_STRING par vos propres valeurs
+			var state = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+			var client_id = "983011222951702558";
+			var redirect_uri = encodeURIComponent("https://example.com/callback");
+			var scope = encodeURIComponent("identify");
+			var response_type = "code";
+
+			// Génère l'URL d'autorisation OAuth2
+			var auth_url = "https://discordapp.com/api/oauth2/authorize?";
+			auth_url += "client_id=" + client_id;
+			auth_url += "&redirect_uri=" + redirect_uri;
+			auth_url += "&response_type=" + response_type;
+			auth_url += "&scope=" + scope;
+			auth_url += "&state=" + state;
+
+			// Redirige l'utilisateur vers la page d'autorisation Discord
+			window.location.href = auth_url;
+		});
+	</script>
+
+</body>
+
+</html>

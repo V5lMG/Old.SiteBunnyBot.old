@@ -1,0 +1,102 @@
+/* Modifie le titre du div content */
+div#content div h1,
+p {
+	margin: 40px;
+}
+
+
+/* Modifie le div content */
+div#content div {
+	display: inline-block;
+	color: #ffffff;
+	width: 48%;
+}
+
+
+/* Modifie les bontons du header */
+.top-btn {
+	display: inline-block;
+	list-style-type: none;
+	vertical-align: top;
+}
+
+
+/* Modifie le fonctionnement des bontons de gauche du header */
+nav.left-top-menu ul li.top-btn:hover a {
+	color: grey;
+	transition: 0.3s all;
+}
+
+/* Modifie le fonctionnement des bontons de droite du header */
+nav.right-top-menu ul li.top-btn:hover a {
+	color: grey;
+	transition: 0.3s all;
+}
+
+
+/* Modifie le texte des boutons de gauche du header */
+nav.left-top-menu ul li.top-btn a {
+	color: #ffffff;
+	text-decoration: none;
+	padding-inline: 25px;
+	font-weight: bolder;
+}
+
+
+
+/* Modifie le texte des boutons de droite du header */
+nav.right-top-menu ul li.top-btn a {
+	color: #b92b2b;
+	text-decoration: none;
+	padding-inline: 25px;
+	font-weight: bolder;
+	position: right;
+
+}
+
+
+/* Modifie le titre a gauche du header */
+header h1 {
+	color: #ffffff;
+	line-height: 20px;
+	float: left;
+	vertical-align: middle;
+	padding-bottom: 35px;
+	padding-left: 8px;
+	padding-right: 30px;
+}
+
+
+/* Modifie l'image a gauche de header */
+header img {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	float: left;
+}
+
+
+/* Modifie tout les éléments du header */
+header {
+	color: #ffffff;
+	padding-left: 35px;
+	margin: auto;
+	line-height: 70px;
+
+}
+
+
+/* Modifie tout les éléments du footer */
+footer {
+	color: #ffffff;
+	text-align: center;
+}
+
+
+/* Modifie tout les éléments du body */
+body {
+	background-image: url(https://images4.alphacoders.com/909/thumb-1920-909912.png);
+	background-size: 100%;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
